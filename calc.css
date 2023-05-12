@@ -1,0 +1,60 @@
+/* importing google Karla fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Karla' , sans-serif;
+}
+body{
+	background-color: white;
+	align-content: center;
+	justify-content: center;
+	display: grid;
+	width: 100%;
+	height: 100vh;
+}
+.container{
+	background-color: blue;
+	position: relative;
+	max-width: 400px;
+	width: 100%;
+	border-radius: 12px;
+    padding: 10px 20px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display{
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 9px;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: none;
+  pointer-events: none;
+
+}
+.buttons{
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+} 
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: blue;
+}
